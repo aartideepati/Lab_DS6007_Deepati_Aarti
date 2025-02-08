@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <img src="profile.jpeg" alt="Your Profile Picture" width="200">
+    <h1>Aarti Deepati</h1>
+
+    <h2>Bio</h2>
+    <p>
+        An aspiring data scientist in Connecticut with a love for coding and passionate about building user centric applications.
+    </p>
+
+    <h2>Skills</h2>
+    <ul>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>C Programming</li>
+        <li>Java Programming</li>
+        <li>HTML</li>
+        <li>Google BigQuery</li>
+        <li>CSS</li>
+    </ul>
+
+    <h2>Links</h2>
+    <ul>
+        <li><a href="https://github.com/aartideepati"><i class="fab fa-github"></i>GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/aartideepati"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+        <li><a href="skype:live:.cid.efae6f8f5d754565t"><i class="fab fa-skype"></i> Skype</a></li>
+    </ul>
+    
+    <h2>Skills Level</h2> 
+    
+    <table>
+        <thead>  <tr>
+                <th>Skill</th>
+                <th>Progress</th>  <th>Percentage</th>
+            </tr>
+        </thead>
+        <tbody>  <tr>
+                <td class="skill-name">Python</td>  <td>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-progress="75"></div>
+                    </div>
+                </td>
+                <td>75%</td>
+            </tr>
+            <tr>
+                <td class="skill-name">SQL</td>
+                <td>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-progress="60"></div>
+                    </div>
+                </td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td class="skill-name">C Programming</td>
+                <td>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-progress="70"></div>
+                    </div>
+                </td>
+                <td>70%</td>
+            </tr>
+            <tr>
+                <td class="skill-name">Java Programming</td>
+                <td>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-progress="60"></div>
+                    </div>
+                </td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td class="skill-name">HTML</td>
+                <td>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                </td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td class="skill-name">Google BigQuery</td>
+                <td>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-progress="70"></div>
+                    </div>
+                </td>
+                <td>70%</td>
+            </tr>
+            <tr>
+                <td class="skill-name">CSS</td>
+                <td>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                </td>
+                <td>80%</td>
+            </tr>
+        </tbody>  </table>
+    
+    <script>
+        const progressBars = document.querySelectorAll('.progress-bar');
+    
+        progressBars.forEach(bar => {
+          const progress = bar.dataset.progress; 
+          bar.style.width = `${progress}%`; 
+        });
+      </script>
+    
+
+</body>
+</html>

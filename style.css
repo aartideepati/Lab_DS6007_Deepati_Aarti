@@ -1,0 +1,45 @@
+/* style.css */
+
+body {
+    font-family: Pacifico;
+    background-color: #F8E5E5; 
+    font-size: 20px; 
+    margin: 50px;
+}
+li span {
+    font-size: 2.5em; 
+    font-weight: bold
+}
+h2, h3 {
+    color: #c39496; 
+    font-size: 3.5em;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+li {
+    margin-bottom: 40px;
+}
+
+p {
+    margin-left: 10px; 
+    color: #000000; 
+    font-size: 1.5em
+}
+
+ol {
+    padding-left: 40px;
+}
+
+li p::before {
+    content: attr(data-icon); 
+    margin-right: 40px;
+}
+
+li:nth-child(1) p::before { content: "🏠"; }
+li:nth-child(2) p::before { content: "♥"; }
+li:nth-child(3) p::before { content: "★"; }
+li:nth-child(4) p::before { content: "♦"; }
